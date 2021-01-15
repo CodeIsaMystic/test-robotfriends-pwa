@@ -1,4 +1,10 @@
-/** Shallow is the most used, the others respond to some particular cases */
+/** Shallow is the most used, the others respond to some particular cases
+ * 
+ * Mount: a full DOM rendering
+ *  ==> components which interact with the DOM API
+ * Render: to render to a static HTML 
+ *  ==> in between shallow & mount
+ */
 import { shallow, mount, render } from 'enzyme';
 
 import React from 'react';
