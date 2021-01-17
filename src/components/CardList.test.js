@@ -6,20 +6,24 @@ import CardList from './CardList';
 
 
 
+/*   Entering all tests in describe   */
+describe('cardList', () => {
 
-const mockRobots = [
-  {
-    id: 1,
-    name: 'Jon Snow',
-    username: 'JonJon',
-    email: 'jon@gmail.com'
-  }
-];
+  const mockRobots = [
+    {
+      id: 1,
+      name: 'Jon Snow',
+      username: 'JonJon',
+      email: 'jon@gmail.com'
+    }
+  ];
 
-const cardList = create(<CardList robots={mockRobots} />);
+  const cardList = create(<CardList robots={mockRobots} />);
 
 
-it('to render CardList Component with react test renderer', () => {
+  it('to render CardList Component with react test renderer', () => {
 
-  expect(cardList.toJSON()).toMatchSnapshot();
+    expect(cardList.toJSON()).toMatchSnapshot();
+  });
+
 });

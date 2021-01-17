@@ -12,15 +12,14 @@ import { create } from "react-test-renderer";
 import Card from './Card';
 
 
-//console.log(shallow(<Card />)); 
-
 /* SHALLOW render this Card component  
- * one thing at the time, like unit test 
+ * one thing at the time, like unit test
+ 
+ 
 it('to render Card Component', () => {
   expect(shallow(<Card />).length).toEqual(1);
 });
 */
-
 
 
 /* SNAPSHOT: takes a picture and shows if there are 
@@ -29,19 +28,22 @@ some changes as a test failed
   => possibility to update if the change is needed
 
 
-
-
 const card = shallow(<Card />);
 
 it('to render Card Component', () => {
   expect(card).toMatchSnapshot();
 });
+*/
 
 
-  Snapshot with react-test-renderer  */
-const card = create(<Card />);
 
+/*   Entering all tests in describe   */
+describe('card', () => {
+  /* ==> Snapshot with react-test-renderer  */
+  const card = create(<Card />);
 
-it('to render Card Component with react test renderer', () => {
-  expect(card.toJSON()).toMatchSnapshot();
+  it('to render Card Component with react test renderer', () => {
+    expect(card.toJSON()).toMatchSnapshot();
+  });
+
 });

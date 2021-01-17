@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 
 class ErrorBoundary extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { hasError: false }
   }
 
-  componentDidCatch (error, info) {
+  componentDidCatch(error, info) {
     this.setState({ hasError: true })
   }
 
-  render () {
-    console.log('ErrorBoundary');
+  render() {
+    //console.log('ErrorBoundary');
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>
     }

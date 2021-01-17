@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`correctly increments the counter 1`] = `
+exports[`counterButtonw correctly increments the counter 1`] = `
 <button
   color="red"
   id="counter"
@@ -11,7 +11,7 @@ exports[`correctly increments the counter 1`] = `
 </button>
 `;
 
-exports[`expect to render counter button component 1`] = `
+exports[`counterButtonw expect to render counter button component 1`] = `
 <button
   color="red"
   id="counter"
