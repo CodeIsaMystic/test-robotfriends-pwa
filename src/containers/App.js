@@ -4,7 +4,6 @@ import { setSearchField, requestRobots } from '../actions';
 
 import MainPage from '../components/main-page/MainPage';
 
-//import './App.css';
 
 /**
  * Considering we want to test the rendered component,
