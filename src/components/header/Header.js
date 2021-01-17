@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CounterButton from './CounterButton';
+import CounterButton from '../counter-button/CounterButton';
 
 // In most cases, instead of writing shouldComponentUpdate()
 // by hand, you can inherit from React.PureComponent. It is
@@ -14,7 +14,7 @@ class Header extends Component {
     //console.log('header')
     return (
       <div>
-        <h1 className='f1'>RoboFriends</h1>
+        <h1 className='f1'>RobotFriends</h1>
         <CounterButton />
       </div>
     );

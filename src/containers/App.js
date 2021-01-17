@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setSearchField, requestRobots } from '../actions';
 
-import MainPage from '../components/MainPage';
+import MainPage from '../components/main-page/MainPage';
 
-import './App.css';
+//import './App.css';
 
 /**
  * Considering we want to test the rendered component,
