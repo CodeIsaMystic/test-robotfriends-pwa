@@ -7,11 +7,11 @@ exports[`mainPage renders MainPage without crashing 1`] = `
   <Header />
   <SearchBox />
   <Scroll>
-    <ErrorBoundary>
+    <ErrorBoundry>
       <CardList
         robots={Array []}
       />
-    </ErrorBoundary>
+    </ErrorBoundry>
   </Scroll>
 </div>
 `;

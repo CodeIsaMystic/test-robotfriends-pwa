@@ -8,7 +8,7 @@ import CounterButton from './CounterButton';
 
 
 /*   Entering all tests in describe   */
-describe('counterButtonw', () => {
+describe('counterButton', () => {
 
   //const counterButton = shallow(<CounterButton />);
 

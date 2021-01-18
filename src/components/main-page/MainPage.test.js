@@ -79,4 +79,37 @@ describe('mainPage', () => {
     ])
   });
 
+  /* Repeating the process on a alternative way  */
+  it('filters robots correctly, test4', () => {
+
+    const mockProps4 = {
+      onRequestRobots: jest.fn(),
+      robots: [{
+        id: 3,
+        name: 'John',
+        email: 'john@gmail.com'
+      }],
+      searchField: 'a',
+      isPending: false
+    }
+
+    const filteredRobots = [];
+    const wrapper4 = shallow(<MainPage {...mockProps4} />)
+
+    expect(wrapper4.instance().filterRobots()).toEqual(filteredRobots)
+  });
+
+
+  it('show the loading page, test5', () => {
+    const mockProps5 = {
+      onRequestRobots: jest.fn(),
+      robots: [],
+      searchField: "",
+      isPending: true
+    }
+
+    const wrapper5 = shallow(<MainPage {...mockProps5} />)
+    expect(wrapper5).toEqual({});
+  });
+
 });
